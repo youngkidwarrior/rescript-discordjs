@@ -1,5 +1,5 @@
 {
-  "name": "rescript-project-template",
+  "name": "rescript-discordjs",
   "version": "0.0.1",
   "scripts": {
     "build": "rescript",
@@ -9,7 +9,7 @@
   "keywords": [
     "rescript"
   ],
-  "author": "",
+  "author": "Victor Ginelli (@youngkidwarrior)",
   "license": "MIT",
   "dependencies": {
     "rescript": "*"
