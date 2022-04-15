@@ -8,3 +8,4 @@ type t = guildMember
 // @TODO:options is optional
 @send
 external send: (t, 'content, 'options) => Js.Promise.t<message> = "send"
+@send external hasPermission: (t, string) => bool = "hasPermission"

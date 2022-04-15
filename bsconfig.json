@@ -1,18 +1,18 @@
 {
-  "name": "rescript-project-template",
+  "name": "rescript-discordjs",
+  "namespace": "Discord",
   "version": "0.0.1",
   "sources": {
-    "dir" : "src",
-    "subdirs" : true
+    "dir": "src",
+    "subdirs": true
   },
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": [
-  ],
+  "bs-dependencies": [],
   "warnings": {
-    "error" : "+101"
-  },
+    "error": "+101"
+  }
 }
