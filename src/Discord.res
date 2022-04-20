@@ -9,3 +9,7 @@ type guildMemberRoleManager
 type guildMember
 type user
 type message
+type reaction
+type reactionManager
+type reactionCollector
+type emoji

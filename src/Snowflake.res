@@ -1,1 +1,1 @@
-type snowflake = string
+type t = string
