@@ -1,4 +1,5 @@
-type t
+open Discord
+type t = messageEmbed
 
 type embedFieldData = {name: string, value: string}
 

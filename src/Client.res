@@ -1,7 +1,10 @@
 open Discord
 type t = client
 
-@module("discord.js") @new external createDiscordClient: 'a => t = "Client"
+type clientOptions = {intents: array<string>}
+
+@module("discord.js") @new
+external createDiscordClient: (~options: clientOptions=?) => t = "Client"
 @send external login: (t, string) => unit = "login"
 @send
 external on: (
@@ -10,8 +13,10 @@ external on: (
   [
     | #ready(unit => unit)
     | #guildCreate(guild => unit)
-    | #message(message => unit)
+    | #messageCreate(message => unit)
+    | #interactionCreate(interaction => unit)
   ],
 ) => unit = "on"
 
 @get external getGuildManager: t => guildManager = "guilds"
+@get external getCommands: t => Collection.t<string, SlashCommandBuilder.json> = "commands"
