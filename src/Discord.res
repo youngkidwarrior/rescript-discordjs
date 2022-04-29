@@ -9,7 +9,12 @@ type guildMemberRoleManager
 type guildMember
 type user
 type message
+type messageAttachment
+type messageEmbed
 type reaction
 type reactionManager
 type reactionCollector
 type emoji
+type interaction
+type applicationCommandManager
+type slashCommandBuilder
