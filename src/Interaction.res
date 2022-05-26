@@ -2,6 +2,7 @@ open Discord
 type t = interaction
 
 @send external isCommand: t => bool = "isCommand"
+@send external isButton: t => bool = "isButton"
 @send
 external reply: (t, ~content: string=?, ~options: 'options=?, unit) => Js.Promise.t<message> =
   "reply"
@@ -17,3 +18,4 @@ external followUp: (t, ~content: string=?, ~options: 'options=?, unit) => Js.Pro
 @get external getClient: t => client = "client"
 @get external getGuildMember: t => guildMember = "member"
 @get external getGuild: t => guild = "guild"
+@get external getCustomId: t => string = "customId"
