@@ -18,3 +18,5 @@ type emoji
 type interaction
 type applicationCommandManager
 type slashCommandBuilder
+type messageActionRow
+type messageButton
