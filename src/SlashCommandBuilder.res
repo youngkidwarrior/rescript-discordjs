@@ -1,7 +1,7 @@
 open Discord
 type t = slashCommandBuilder
 
-type json = {data: t, execute: interaction => Js.Promise.t<message>}
+type json = {data: t, execute: interaction => Js.Promise.t<unit>}
 
 @module("@discordjs/builders") @new external make: unit => t = "SlashCommandBuilder"
 @send external setName: (t, string) => t = "setName"
