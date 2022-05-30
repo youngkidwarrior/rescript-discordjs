@@ -18,5 +18,8 @@ type emoji
 type interaction
 type applicationCommandManager
 type slashCommandBuilder
+type slashCommandStringOption
 type messageActionRow
 type messageButton
+type commandInteractionOptionResolver
+type permissions
