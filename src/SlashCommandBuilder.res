@@ -9,3 +9,7 @@ type json = {data: t, execute: interaction => Js.Promise.t<unit>}
 @send external toJSON: t => json = "toJSON"
 
 @get external getCommandName: t => string = "name"
+
+@send
+external addStringOption: (t, slashCommandStringOption => slashCommandStringOption) => t =
+  "addStringOption"

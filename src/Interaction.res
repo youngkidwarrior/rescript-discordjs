@@ -1,3 +1,4 @@
+// This file assumes the Interaaction is used in a Command a.k.a BaseCommandInteraction
 open Discord
 type t = interaction
 
@@ -19,3 +20,5 @@ external followUp: (t, ~content: string=?, ~options: 'options=?, unit) => Js.Pro
 @get external getGuildMember: t => guildMember = "member"
 @get external getGuild: t => guild = "guild"
 @get external getCustomId: t => string = "customId"
+
+@get external getOptions: t => commandInteractionOptionResolver = "options"
