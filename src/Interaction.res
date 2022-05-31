@@ -5,15 +5,13 @@ type t = interaction
 @send external isCommand: t => bool = "isCommand"
 @send external isButton: t => bool = "isButton"
 @send
-external reply: (t, ~content: string=?, ~options: 'options=?, unit) => Js.Promise.t<message> =
-  "reply"
+external reply: (t, ~options: 'options=?, unit) => Js.Promise.t<message> = "reply"
 @send
 external deferReply: (t, ~options: 'options=?, unit) => Js.Promise.t<message> = "deferReply"
 @send
-external editReply: (t, ~options: 'options=?, unit) => Js.Promise.t<message> = "editReply"
+external editReply: (t, ~options: 'options, unit) => Js.Promise.t<message> = "editReply"
 @send
-external followUp: (t, ~content: string=?, ~options: 'options=?, unit) => Js.Promise.t<message> =
-  "followUp"
+external followUp: (t, ~options: 'options, unit) => Js.Promise.t<message> = "followUp"
 
 @get external getCommandName: t => string = "commandName"
 @get external getClient: t => client = "client"
