@@ -5,6 +5,7 @@ type t = guildMember
 @get external getGuildMemberRoleManager: t => guildMemberRoleManager = "roles"
 @get external getGuild: t => guild = "guild"
 @get external getPermissions: t => permissions = "permissions"
+@get external getDisplayName: t => string = "displayName"
 
 // @TODO:options is optional
 @send
