@@ -6,6 +6,8 @@ type t = interaction
 @send external isButton: t => bool = "isButton"
 @send
 external reply: (t, ~options: 'options=?, unit) => Js.Promise.t<message> = "reply"
+
+//should be nullable
 @send
 external deferReply: (t, ~options: 'options=?, unit) => Js.Promise.t<message> = "deferReply"
 @send
@@ -18,5 +20,6 @@ external followUp: (t, ~options: 'options, unit) => Js.Promise.t<message> = "fol
 @get external getGuildMember: t => guildMember = "member"
 @get external getGuild: t => guild = "guild"
 @get external getCustomId: t => string = "customId"
+@get external getUser: t => user = "user"
 
 @get external getOptions: t => commandInteractionOptionResolver = "options"

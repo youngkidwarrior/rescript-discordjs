@@ -2,11 +2,7 @@ open Discord
 type t = reactionCollector
 
 @send
-external createReactionCollector: (
-  Message.t,
-  (reaction, user) => Js.Promise.t<bool>,
-  'options,
-) => t = "createReactionCollector"
+external createReactionCollector: (message, 'options) => t = "createReactionCollector"
 
 @send
 external on: (
