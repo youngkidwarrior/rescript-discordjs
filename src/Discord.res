@@ -6,6 +6,7 @@ type guild
 type guildManager
 type roleManager
 type guildMemberRoleManager
+type guildMemberManager
 type guildMember
 type user
 type message

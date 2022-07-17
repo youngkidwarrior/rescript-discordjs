@@ -5,7 +5,8 @@ type clientOptions = {intents: array<string>}
 
 @module("discord.js") @new
 external createDiscordClient: (~options: clientOptions=?) => t = "Client"
-@send external login: (t, string) => unit = "login"
+@send external login: (t, string) => Js.Promise.t<string> = "login"
+@send external isReady: t => bool = "isReady"
 @send
 external on: (
   t,

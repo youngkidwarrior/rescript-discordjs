@@ -12,6 +12,7 @@
   "author": "Victor Ginelli (@youngkidwarrior)",
   "license": "MIT",
   "dependencies": {
+    "discord.js": "^13.8.1",
     "rescript": "*"
   }
 }
