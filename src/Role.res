@@ -1,7 +1,9 @@
 open Discord
 type t = role
 
+@get external getRoleId: t => string = "id"
 @get external getName: t => string = "name"
+@get external getGuild: t => guild = "guild"
 
 //Use @optional flag
 @send
