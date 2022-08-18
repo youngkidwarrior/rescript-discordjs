@@ -1,7 +1,7 @@
 {
   "name": "rescript-discordjs",
   "namespace": "Discord",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "sources": {
     "dir": "src",
     "subdirs": true
