@@ -17,6 +17,8 @@ external on: (
     | #messageCreate(message => unit)
     | #interactionCreate(interaction => unit)
     | #guildDelete(guild => unit)
+    | #guildMemberAdd(guildMember => unit)
+    | #roleUpdate((~oldRole: role, ~newRole: role) => unit)
   ],
 ) => unit = "on"
 
