@@ -7,6 +7,7 @@ type clientOptions = {intents: array<string>}
 external createDiscordClient: (~options: clientOptions=?) => t = "Client"
 @send external login: (t, string) => Js.Promise.t<string> = "login"
 @send external isReady: t => bool = "isReady"
+@send external destroy: t => unit = "destroy"
 @send
 external on: (
   t,
