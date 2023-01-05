@@ -13,4 +13,4 @@ type t<'key, 'value>
 @send external filter: (t<'key, 'value>, 'value => bool) => t<'key, 'value> = "filter"
 
 @get external getSize: t<'key, 'value> => int = "size"
-@get external values: t<'key, 'value> => array<'value> = "values"
+@send external values: t<'key, 'value> => array<'value> = "values"
