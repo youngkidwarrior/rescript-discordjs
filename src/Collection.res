@@ -11,6 +11,6 @@ type t<'key, 'value>
 @send external toJSON: t<'key, 'value> => array<'value> = "toJSON"
 @send external has: (t<'key, 'value>, 'key) => bool = "has"
 @send external filter: (t<'key, 'value>, 'value => bool) => t<'key, 'value> = "filter"
-
+@send external equals: (t<'key, 'value>, t<'key, 'value>) => bool = "equals"
 @get external getSize: t<'key, 'value> => int = "size"
 @send external values: t<'key, 'value> => array<'value> = "values"
