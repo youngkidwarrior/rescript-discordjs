@@ -20,6 +20,7 @@ external on: (
     | #guildDelete(guild => unit)
     | #guildMemberAdd(guildMember => unit)
     | #roleUpdate((~oldRole: role, ~newRole: role) => unit)
+    | #guildMemberUpdate((~oldMember: guildMember, ~newMember: guildMember) => unit)
   ],
 ) => unit = "on"
 
