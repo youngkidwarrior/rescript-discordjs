@@ -1,7 +1,7 @@
 open Discord
 type t = client
 
-type clientOptions = {intents: array<string>}
+type clientOptions = {intents: array<string>, partials: array<string>}
 
 @module("discord.js") @new
 external createDiscordClient: (~options: clientOptions=?) => t = "Client"
