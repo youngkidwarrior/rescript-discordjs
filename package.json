@@ -1,6 +1,6 @@
 {
   "name": "rescript-discordjs",
-  "version": "0.2.8",
+  "version": "0.2.10",
   "scripts": {
     "build": "rescript",
     "clean": "rescript clean -with-deps",
