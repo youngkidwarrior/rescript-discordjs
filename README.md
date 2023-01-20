@@ -161,7 +161,7 @@ let onInteraction = async (interaction: Interaction.t) => {
         switch await Button.execute(interaction) {
         | exception e =>
           switch e {
-          | JsError(obj) => Js.Console.error2(obj)
+          | JsError(obj) => Js.Console.error(obj)
           | _ => Js.Console.error(e)
           }
         | _ =>
